@@ -1,0 +1,114 @@
+#include<stdio.h>
+#include<conio.h>
+int i,j,k,l,m,n,id,p,rid,rp;
+char name;
+void main()
+{
+ist :clrscr();
+printf("\n Please insert Your card and then press Enter key");
+getch();
+printf("\n Enter Your 4 digit pin");
+scanf("%4d",&i);
+printf("\n Press 1 for Net Banking");
+printf("\n Press 2 for online Banking");
+scanf("%d",&k);
+ if(k==1)
+{
+  {
+  printf("\n Press 1 for Current account");
+  printf("\n Press 2 for Saving account");
+  scanf("%d",&l);
+  }
+   if(l==1)
+ {
+   {
+    printf("Re-enter Your password");
+    scanf("%d",&j);
+   }
+    if(j==i)
+  {
+  printf("\n Enter your money to withdraw");
+  scanf("%d",&m);
+  printf("\n Do you want receipt");
+  printf("\n Yes or \n No");
+  scanf(" %c",&name);
+
+  if(name=='y')
+  {
+  printf("\n You withdraw cash is %d",m);
+  printf("\n Thanking for Banking with us!! Stay Safe!! Stay Home!!");
+  }
+  else
+  printf("\n Thanking for Banking with us!! Stay Safe!! Stay Home!!");
+  }
+  else if(j!=i)
+  {
+  printf("\n Invalid password");
+  printf("\n Please Re-insert your card");
+  getch();
+  printf("\n Press the enter key");
+  getch();
+  goto ist;
+  }
+ }
+  else if(l==2)
+  {
+    printf("\n Enter your money to withdraw");
+  scanf("%d",&m);
+  printf("\n Do you want receipt");
+  printf("\n Yes or \n No");
+  scanf(" %c",&name);
+
+  if(name=='y')
+  {
+  printf("\n You withdraw cash is %d",m);
+  printf("\n Thanking for Banking with us!! Stay Safe!! Stay Home!!");
+  }
+  else
+  printf("\n Thanking for Banking with us!! Stay Safe!! Stay Home!!");
+  }
+
+
+
+ }
+
+   else if(k==2)
+   {
+    {
+    printf("\n Enter your Id");
+    scanf("%d",&id);
+    printf("\n Enter your password");
+    scanf("%d",&p);
+    clrscr();
+    printf("Welcome Sir!!");
+    getch();
+    clrscr();
+    printf("\n Please Re-enter Your ID for verification purpose");
+    scanf("%d",&rid);
+    }
+     if(rid==id)
+     {
+     printf("\n Please Re-enter Your Password for verification purpose");
+     scanf("%d",&rp);
+     }
+     if(rp==p)
+    {
+    printf("\n Enter your money to withdraw");
+    scanf("%d",&m);
+    printf("\n Do you want receipt");
+    printf("\n Yes or \n No");
+    scanf(" %c",&name);
+    if(name=='y')
+    {
+    printf("\n You withdraw cash is %d",m);
+    printf("\n Thanking for Banking with us!! Stay Safe!! Stay Home!!");
+    }
+    else
+    printf("\n Thanking for Banking with us!! Stay Safe!! Stay Home!!");
+
+   }
+
+ }
+
+getch();
+}
